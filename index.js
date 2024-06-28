@@ -9,7 +9,7 @@ const port = 5000;
 
 // Configure CORS to allow requests from your Angular application
 const corsOptions = {
-  origin: 'http://localhost:4200', // Adjust this as needed
+  origin: 'http://localhost:3000', // Adjust this as needed
   optionsSuccessStatus: 200 // For legacy browser support
 };
 

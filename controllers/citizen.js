@@ -43,9 +43,8 @@ const createCitizen = catchAsyncErr(async (req,res) => {
 })
 
 const getCitizenBySSN = catchAsyncErr(async (req, res) => {
-  const { ssn, motherSSN, motherName } = req.body;
+  const { ssn, motherSSN, motherName } = req.query;
 
-  
   const citizen = await Citizen.findOne({ ssn });
   
   if (!citizen) {
